@@ -28,7 +28,19 @@ github_username:  jekyll
 markdown: kramdown
 theme: minima
 gems:
-  - jekyll-feed
+  - jekyll-assets
 exclude:
   - Gemfile
   - Gemfile.lock
+assets:
+  prefix: "/assets"
+  sources:
+    - _assets/css
+    - _assets/img
+    - _assets/js
+  compress:
+    css: sass
+    js: uglifier
+  features:
+    automatic_img_alt: true
+    automatic_img_size: false
